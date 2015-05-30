@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/ccEditText"
+        android:singleLine="true"
+        android:lines="1"
+        android:maxLength="20"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:singleLine="true"
+        android:lines="1"
+        android:maxLength="4"
+        android:id="@+id/cvvEditText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ccEditText"
+        android:layout_toEndOf="@+id/ccEditText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:lines="1"
+        android:maxLength="5"
+        android:id="@+id/dateEditText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/cvvEditText"
+        android:layout_toEndOf="@+id/cvvEditText" />
+
+    <ImageView
+        android:src="@drawable/ic_no_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brandImageView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
